@@ -20,6 +20,7 @@ def when_pressed():
 def when_released():
   led.on()
 def reboot(): 
+  os.system("sudo /home/pi/RetroFlag/pngshutdown /home/pi/RetroFlag/shutdown.png &")
   os.system("sudo killall emulationstation && sleep 5s && sudo reboot")
   
 btn = Button(powerPin, hold_time=hold)
