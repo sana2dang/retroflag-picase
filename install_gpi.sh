@@ -23,9 +23,9 @@ sleep 2s
 #-----------------------------------------------------------
 
 #Step 5) Download Python script-----------------------------
-cd /opt/
+cd /home/pi/
 sudo mkdir RetroFlag
-cd /opt/RetroFlag
+cd /home/pi/RetroFlag
 script=SafeShutdown.py
 
 if [ -e $script ];
